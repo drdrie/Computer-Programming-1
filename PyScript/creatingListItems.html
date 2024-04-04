@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    </head>
+
+    <body>
+        <h1>Using Python to Create list items</h1>
+        <ul id='students'></ul>
+
+        <py-script>
+            from js import document 
+            for i in range(5):
+                student = document.createElement('li')
+                student.innerText = 'This is student' + str(i+1)
+                document.getElementById('students').appendChild(student);
+        </py-script>
+    </body>
+</html>

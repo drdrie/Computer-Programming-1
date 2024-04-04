@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    </head>
+
+    <body>
+        <h1>Hello World!</h1>
+        <h1 id="text"></h1> <!--Put an ID to your element so we access it later-->
+
+        <py-script>
+            from js import document <!--import document from js library-->
+            <!--Get the text element you want to put value on-->
+            <!--Use element's ID-->
+            <!--Use innerText to change the text element--> 
+            <!--Example
+                <h1>This is the innerText</h1>
+            -->
+            document.getElementById('text').innerText = 'Hello World From Python'
+        </py-script>
+    </body>
+</html>

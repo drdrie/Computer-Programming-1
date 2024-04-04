@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    </head>
+
+    <body>
+        <h1>Using Python Loops to Create Elements</h1>
+
+        <py-script>
+            from js import document 
+            for i in range(5):
+                para = document.createElement('p')
+                para.innerText = 'This is paragraph' + str(i+1)
+                document.body.appendChild(para)
+        </py-script>
+    </body>
+</html>
